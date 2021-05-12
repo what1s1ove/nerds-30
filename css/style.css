@@ -144,3 +144,62 @@ header {
     background: var(--special-social);
 }
 
+/*--Catalog--*/
+
+.main-heading {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+    
+.product-filter-text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+    
+.price-band {
+    background: var(--basic-pale-white);
+}
+    
+.product-sorting-heading {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+    
+.sorting-option-item {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+    
+.sorting-option-active {
+    opacity: 1;
+}
+    
+.grid-view-item {
+    color: var(--basic-dark-blue);
+}
+    
+.product-features-item {
+    color: var(--basic-dark-blue);
+}
+    
+.product-filter-but {
+    font-size: 16px;
+    background: var(--basic-pale-white);
+}
+    
+.product-item {
+    background: var(--basic-dark);
+}
+    
+.circle div {
+    background: var(--basic-white);
+}
+    
+.product-navigation > li {
+    background: var(--basic-pale-white);
+}
