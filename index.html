@@ -1,90 +1,122 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>HTML Academy: Нёрдс</title>
-</head>
-<body>
-
-	<!--Header-->
-  			<header class="header">
-  				<nav class="nav">
-  						<a href="">Студия</a>
-  						<a href="">Клиенты</a>
-  						<a href="">Магазин</a>
-  						<a href="">Контакты</a>
-  					  <a href="">Корзина</a>
-  				</nav>
-  			</header>
-
-  			<img src="https://via.placeholder.com/140x80" alt="Логотип">
-  			<p>Долго, дорого, скрупулезно.</p>
-  			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  			<a href="">Узнать больше</a>
-
-		  <!--Main-->
-		<main>
-
-      <section>
-  			<ul>
-  				<li>ВЕБ-САЙТЫ</li>
-  				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  				<a href="">Заказать</a>
-  				<li>ПРИЛОЖЕНИЯ</li>
-  				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-  				<a href="">Заказать</a>
-  				<li>ПРЕЗЕНТАЦИИ</li>
-  				<p>Вы даже не подозреваете, насколько вы изумительны!!</p>
-  				<a href="">Заказать</a>
-  			</ul>
-      </section>
-
-      <section>
-  			<h1>Мы - маленькая, но гордая дизайн-студия из Краснодара</h1>
-  			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
-  			<p>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
-  			<ul>
-  				<li>Веб-сайтов любой сложности</li>
-  				<li>Мобильных приложений для iOS и Android</li>
-  				<li>Слайдшоу и видео для корпоративных презентаций</li>
-  			</ul>
-  			<img src="https://via.placeholder.com/390x228" alt="Нёрдс">
-  			<p>с 2004 года Любим точность во всем:</p>
-        <ul>
-          <li>146<sup>%</sup></li>
-          <p>Уровень самоотдачи</p>
-          <li>10<sup>%</sup></li>
-          <p>Соблюдение сроков</p>
-          <li>50<sup>%</sup></li>
-          <p>Минимальная предоплата</p>
-        </ul>
-      </section>
-
-      <section>
-        <ul>
-          <li><img src="https://via.placeholder.com/170x120" alt="картинка"></li>
-          <li><img src="https://via.placeholder.com/170x120" alt="картинка"></li>
-          <li><img src="https://via.placeholder.com/170x120" alt="картинка"></li>
-          <li><img src="https://via.placeholder.com/170x120" alt="картинка"></li>
-        </ul>
-      </section>
-
-      <!--Карта и адресса-->
-      <section>
-        <h2>NЁRDS DESIGN STUDIO</h2>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      </section>
-  		</main>
-  		
-  		<!--подвал-->
-  	   <footer>
-         <ul>
-           <li><img src="https://via.placeholder.com/75x75" alt="vk"></li>
-           <li><img src="https://via.placeholder.com/75x75" alt="facebook"></li>
-           <li><img src="https://via.placeholder.com/75x75" alt="instagram"></li>
-         </ul>
-  	     <h1>Давайте дружить, это выгодно!</h1>
-  	     <p>Скидка 10% для друзей из социальных сетей.</p>
-  	   </footer>
-</body>
+<html lang="ru">
+  <head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/faicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Нёрдс</title>
+  </head>
+  <body>
+      <header class="main">
+        <div class="menu">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="logo" class="logo">
+          <ul class="menu-list">
+            <li class="menu1"><a href="#">СТУДИЯ</a></li>
+            <li class="menu1"><a href="#">КЛИЕНТЫ</a></li>
+            <li class="menu1"><a href="catalog.html">МАГАЗИН</a></li>
+            <li class="menu1"><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+          <div class="cart">
+            <img src="img/cart-icon.svg" alt="cart" class="cart-icon">
+            <a href="#" class="cart-text">КОРЗИНА</a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="slider">
+          <div class="slide_1">
+            <div class="slide_1-1">
+              <p class="slide_2-2">Долго, дорого, скрупулезно</p>
+              <p class="slide_3-3">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <button class="slide_1-button">УЗНАТЬ БОЛЬШЕ</button>
+            </div>
+            <img src="img/nerds-index-slide1 1.png" width="760" height="430" alt="slide1" class="slide_1-img">
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+        </section>
+        <section class="site">
+          <div class="site-div">
+            <img src="img/illustration-1 1.jpg" width="300" height="146" alt="illustration-1" class="offers-item-img">
+            <p class="site1">ВЕБ-САЙТЫ</p>
+            <p class="site2">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <button class="zakaz">заказать</button>
+          </div>
+          <div class="app">
+            <img src="img/illustration-2 1.svg" width="300" height="146" alt="illustration-2" class="offers-item-img">
+            <p class="site1">ПРИЛОЖЕНИЯ</p>
+            <p class="site2">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <button class="zakaz2">заказать</button>
+          </div>
+          <div class="present">
+            <img src="img/illustration-3 1.svg" width="300" height="146" alt="illustration-3" class="offers-item-img">
+            <p class="site1">ПРЕЗЕНТАЦИЯ</p>
+            <p class="site2">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <button class="zakaz3">заказать</button>
+          </div>
+        </section>
+        <section class="about1">
+          <div class="text">
+            <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <p>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+            <ul class="about2">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android	</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="about3">
+            <img src="img/nerds-illustration 1.png" width="360" height="208" alt="nerds-illustration-1" class="about3">
+            <p class="about4">с 2004 года Любим точность во всем:</p>
+            <div class="about5">
+              <div class="6">
+                <p class="about6-1">146</p>
+                <p class="about6-2">Уровень самоотдачи</p>
+              </div>
+              <div class="7">
+                <p class="about6-1">100</p>
+                <p class="about6-2">Соблюдение сроков</p>
+              </div>
+              <div class="about8">
+                <p class="about6-1">50</p>
+                <p class="about6-1">Минимальная предоплата</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="partners">
+          <img src="img/logo-1 1.png" width="195" height="65" alt="logo-1" class="partners">
+          <img src="img/logo-2 1.png" width="200" height="80" alt="logo-2" class="partners">
+          <img src="img/logo-3 1.png" width="170" height="45" alt="logo-3" class="partners">
+          <img src="img/logo-4 1.png" width="165" height="75" alt="logo-4" class="partners">
+        </section>
+        <section class="contacts">
+          <img src="img/map 1.png" width="1440" height="416" alt="map">
+          <img src="img/map-marker 1.png" width="230" height="190" alt="map">
+          <div class="information">
+            <p class="location1">NЁRDS DESIGN STUDIO</p>
+            <p class="location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
+            <p class="phone-numbers">тел. +7 (812) 275-75-75</p> 
+            <button class="location-but">НАПИШИТЕ НАМ</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="social-networks">
+          <img src="img/vk.svg" alt="vk" class="social">
+          <img src="img/facebook.svg" alt="facebook" class="social">
+          <img src="img/instagram.svg" alt="instagram" class="social">
+        </div>
+        <div class="footer-text">
+          <p class="footer1">Давайте дружить, это выгодно!</p>
+          <p class="footer2">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </footer>
+  </body>
 </html>
