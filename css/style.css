@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("/fonts/roboto.woff");
+}
+
+:root {
+    --basic-black: black;
+    --basic-white: white;
+    --basic-pale-white: #EEEEEE;
+    --basic-dark-blue: #283136;
+    --basic-light-grey: #666666;
+    --basic-grey: #444444;
+    --basic-red: #FB565A;
+    --basic-green: #00CA74;
+    --basic-yellow: #EFC849;
+    --basic-dark: #4D4D4D;
+
+    --special-social: #E1E1E1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+header {
+    background: var(--basic-pale-white);
+}
+
+.menu1 {
+    line-height: 30px;  
+    font-weight: 500; 
+}
+
+.slider {
+    background: var(--basic-pale-white);
+}
+
+.slide_2-2 {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.slide_3-3 {
+    color: var(--basic-dark-blue);
+}
+
+.slide_1-button {
+    position: absolute;
+    outline: none;
+    color: var(--basic-white);
+    font-size: 16px;
+    background: var(--basic-red)
+    
+}
+
+.site1 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.site2 {
+    line-height: 24px;
+    color: var(--basic-dark-blue);
+    
+}
+
+.zakaz{
+    background: var(--basic-red);
+    font-size: 14px;
+    color: white;
+}
+
+.zakaz2 {
+    background: var(--basic-green);
+    font-size: 14px;
+    color: white;
+}
+
+.zakaz3 {
+    background: var(--basic-yellow);
+    font-size: 14px;
+    color: white;
+}
+
+.about-us-heading {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+
+.about4{
+    font-weight: bold;
+}
+
+.about6-1 {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: bold;
+}
+
+.about6-2 {
+    color: var(--basic-dark-blue);
+}
+
+.location {
+    background: var(--basic-white);
+}
+
+.location1 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.location {
+    color: var(--basic-light-grey);
+}
+
+.location-but {
+    color: var(--basic-white);
+    font-size: 16px;
+    background: var(--basic-red);
+}
+
+.footer1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.footer2 {
+    line-height: 22px;
+    color: var(--basic-grey);
+}
+
+.social-networks-item {
+    background: var(--special-social);
+}
+
+/*Каталог*/
+
+.main-heading {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+    
+.product-filter-text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+    
+.price-band {
+    background: var(--basic-pale-white);
+}
+    
+.product-sorting-heading {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+    
+.sorting-option-item {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+    
+.sorting-option-active {
+    opacity: 1;
+}
+    
+.grid-view-item {
+    color: var(--basic-dark-blue);
+}
+    
+.product-features-item {
+    color: var(--basic-dark-blue);
+}
+    
+.product-filter-but {
+    font-size: 16px;
+    background: var(--basic-pale-white);
+}
+    
+.product-item {
+    background: var(--basic-dark);
+}
+    
+.circle div {
+    background: var(--basic-white);
+}
+    
+.product-navigation > li {
+    background: var(--basic-pale-white);
+}
