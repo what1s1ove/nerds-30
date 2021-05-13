@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-apple.png">
@@ -12,72 +14,73 @@
   <title>module3-task2</title>
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a><img width="160" height="65" src="img/header-logo.svg" alt="Логотип нёрдс"></a>
-      <ul>
-        <li><a href="">студия</a></li>
-        <li><a href="">клиенты</a></li>
-        <li><a href="">магазин</a></li>
-        <li><a href="">контакты</a></li>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img width="160" height="65" src="img/header-logo.svg" alt="Логотип нёрдс">
+      </a>
+      <ul class="site-navigation-list">
+        <li class="site-navigation-item"><a href="">студия</a></li>
+        <li class="site-navigation-item"><a href="">клиенты</a></li>
+        <li class="site-navigation-item"><a href="">магазин</a></li>
+        <li class="site-navigation-item"><a href="">контакты</a></li>
       </ul>
-      <a href="">корзина</a>
+      <a class="cart-link" href="">корзина</a>
     </nav>
-    <h3>Магазин готовых шаблонов</h3>
+    <h3 class="main-header-title">Магазин готовых шаблонов</h3>
   </header>
 
-  <main>
-    
+  <main class="container">
 
     <!-- main filters -->
-    <section>
+    <section class="filters">
       <form action="#">
         <fieldset>
-          <h3>Соимость:</h3>
+          <h3 class="filter-title">Соимость:</h3>
           <input type="range">
-          <label for="ot">ОТ</label>
+          <label for="ot" class="filter-price-txt">ОТ</label>
           <input type="number" id="ot" placeholder="0">
-          <label for="do">ДО</label>
+          <label for="do" class="filter-price-txt">ДО</label>
           <input type="number" id="do" placeholder="15000">
         </fieldset>
 
         <fieldset>
-          <h3>Сетка:</h3>
+          <h3 class="filter-title">Сетка:</h3>
           <input type="radio" id="adaptiv" name="grid">
-          <label for="adaptiv">Адаптивная</label>
+          <label for="adaptiv" class="filter-items">Адаптивная</label>
           <input type="radio" id="fix" name="grid">
-          <label for="fix">Фиксированная</label>
+          <label for="fix" class="filter-items">Фиксированная</label>
           <input type="radio" id="eraser" name="grid">
-          <label for="eraser">Резиновая</label>
+          <label for="eraser" class="filter-items">Резиновая</label>
         </fieldset>
 
         <fieldset>
-          <h3>Особенности:</h3>
+          <h3 class="filter-title" class="filter-items">Особенности:</h3>
           <input type="checkbox" id="slider">
-          <label for="slider">Слайдер</label>
+          <label for="slider" class="filter-items">Слайдер</label>
           <input type="checkbox" id="block">
-          <label for="block">Блок преймуществ</label>
+          <label for="block" class="filter-items">Блок преймуществ</label>
           <input type="checkbox" id="news">
-          <label for="news">Новости</label>
+          <label for="news" class="filter-items">Новости</label>
           <input type="checkbox" id="gallery">
-          <label for="gallery">Галерея</label>
+          <label for="gallery" class="filter-items">Галерея</label>
           <input type="checkbox" id="basket">
-          <label for="basket">Корзина</label>
+          <label for="basket" class="filter-items">Корзина</label>
         </fieldset>
 
-        <a href="">Показать</a>
+        <a href="" class="filters-button">Показать</a>
       </form>
     </section>
 
-    <section>
-        <h3>Сортировать</h3>
-        <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По названию</li>
-          <li></li>
-          <li></li>
+    <section class="sorting">
+        <h3 class="sorting-title">Сортировать:</h3>
+        <ul class="sorting-list">
+          <li class="sorting-item-active">По цене</li>
+          <li class="sorting-item">По типу</li>
+          <li class="sorting-item">По названию</li>
+          <li class="sorting-item"></li>
+          <li class="sorting-item"></li>
         </ul>
     </section>
 
@@ -94,46 +97,45 @@
         <img src="img/site1.png" alt="Первый шаблон">
         <!-- всплывающае окно карточки -->
         <div>
-          <h3>sedona</h3>
-          <p>Информационный сайт для туристов</p>
-          <a href="">9 900р</a>
+          <h3 class="card-title">sedona</h3>
+          <p class="card-description">Информационный сайт для туристов</p>
+          <a href="" class="card-button">9 900р</a>
         </div>
       </div>
 
-      <ul>
-        <li><a href="">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-        <li><a href="">Следующая</a></li>
+      <ul class="pages-list">
+        <li class="pages-item-active"><a href="">1</a></li>
+        <li class="pages-item"><a href="">2</a></li>
+        <li class="pages-item"><a href="">3</a></li>
+        <li class="pages-item"><a href="">Следующая</a></li>
       </ul>
     </section>
     
-    <section>
-      <!-- map -->
-      <div>
-        <img src="img/map.png" alt="Карта">
+    <section class="location">
+    
+      <img src="img/map.png" alt="Карта">
+    
+      <div class="contact-us">
+        <h3 class="contact-us-title">NЁRDS DESIGN STUDIO</h3>
+        <p class="contact-us-location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="tel:+78122757575" class="telephone-number">тел. +7 (812) 275-75-75</a>
+        <a href="" class="contact-us-button">Напишите нам</a>
       </div>
-
-      <div>
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      </div>
-
+    
       <img width="231" height="190" src="https://via.placeholder.com/231x190" alt="Геометка">
     </section>
-  </main>
-
-  <footer>
-    <ul>
-      <li><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="vk"></li>
-      <li><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="facebook"></li>
-      <li><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="instagram"></li>
-    </ul>
-
-    <h3>Давайте дружить, это выгодно!</h3>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
-  </footer>
+    </main>
+    
+    <footer class="main-footer">
+      <ul class="footer-list">
+        <li class="footer-item"><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="vk"></li>
+        <li class="footer-item"><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="facebook"></li>
+        <li class="footer-item"><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="instagram"></li>
+      </ul>
+    
+      <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
+      <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
 
 </body>
 
