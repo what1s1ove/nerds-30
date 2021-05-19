@@ -77,6 +77,16 @@
 
 .services-list {
   list-style: none;
+
+  display: grid;
+
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 347px;
+  column-gap: 100px;
+}
+
+.services-item {
+  border: 2px greenyellow solid;
 }
 
 .services-item-title {
@@ -101,6 +111,11 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.about-and-stat {
+  display: grid;
+  grid-template-columns: 651px 360px;
 }
 
 /* ABOUT US */
@@ -158,6 +173,20 @@
   font-size: 16px;
   line-height: 18px;
   color: #283136;
+}
+
+/* CLIENTS */
+
+.clients-list {
+  list-style: none;
+  display: grid;
+
+  grid-template-columns: 199px 209px 185px 173px;
+  column-gap: 95px;
+}
+
+.clients-items {
+  border: 2px rebeccapurple solid;
 }
 
 /* LOCATION */
