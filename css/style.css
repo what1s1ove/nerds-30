@@ -22,6 +22,18 @@
   font-style: normal;
 }
 
+:root {
+  --red-peace: #fb565a;
+  --red-hover: #e74246;
+  --red-click: #d7373b;
+  --green-peace: #00ca74;
+  --green-hover: #00bc6c;
+  --green-click: #00aa62;
+  --yellow-peace: #efc849;
+  --yellow-hover: #eab534;
+  --yellow-click: #e5a722;
+}
+
 /* HEADER */
 
 .site-navigation-item {
@@ -69,7 +81,7 @@
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
-  background: #fb565a;
+  background: var(--red-peace);
   text-transform: uppercase;
 }
 
@@ -221,7 +233,7 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
-  background: #fb565a;
+  background: var(--red-peace);
   border-radius: 3px;
 }
 
@@ -335,7 +347,7 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
-  background: #fb565a;
+  background: var(--red-peace);
   border-radius: 3px;
 }
 
