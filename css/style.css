@@ -34,7 +34,22 @@
   --yellow-click: #e5a722;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /* HEADER */
+
+.site-navigation-list {
+  list-style: none;
+}
 
 .site-navigation-item {
   list-style: none;
