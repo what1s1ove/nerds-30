@@ -47,12 +47,36 @@
 
 /* HEADER */
 
+.main-header {
+  margin-top: 49px;
+}
+
+.main-navigation {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.main-header-logo {
+  margin-right: 0px;
+}
+
 .site-navigation-list {
   list-style: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .site-navigation-item {
   list-style: none;
+  margin-right: 45px;
+}
+
+.site-navigation-item:last-child {
+  /* margin-right: 246px; */
 }
 
 .site-navigation-item a {
@@ -72,6 +96,13 @@
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+/* SLIDER */
+
+.slide-content {
+  display: flex;
+  align-items: center;
 }
 
 /* MAIN */
@@ -104,9 +135,7 @@
 
 .services-list {
   list-style: none;
-
   display: grid;
-
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 347px;
   column-gap: 100px;
@@ -184,8 +213,14 @@
   color: #000000;
 }
 
+.flex-statistics-list {
+  display: flex;
+  align-items: center;
+}
+
 .our-statistics-list {
   list-style: none;
+  padding: 0;
 }
 
 .our-statistics-number {
@@ -213,7 +248,8 @@
 }
 
 .clients-items {
-  border: 2px rebeccapurple solid;
+  display: flex;
+  align-items: center;
 }
 
 /* LOCATION */
@@ -254,11 +290,23 @@
 
 /* FOOTER */
 
+.main-footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
 .footer-title {
   font-family: "roboto bold", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin: 0;
 }
 
 .footer-description {
@@ -266,6 +314,16 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #e1e1e1, #e1e1e1), #ffffff;
+  width: 81px;
+  height: 81px;
 }
 
 /* CATALOG.HTML */
