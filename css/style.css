@@ -451,3 +451,26 @@
   box-sizing: border-box;
   border-radius: 3px;
 }
+
+.main-content {
+  display: flex;
+}
+
+.sorting {
+  display: flex;
+}
+
+.sorting-list {
+  display: flex;
+}
+
+.pages-list {
+  display: flex;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 358px 358px;
+  row-gap: 31px;
+  column-gap: 42px;
+}
