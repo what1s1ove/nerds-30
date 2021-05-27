@@ -30,8 +30,10 @@
         <div class="product-filter">
             <p class="product-filter-text">СТОИМОСТЬ:</p>
             <input class="price-band" type="range" min="0" max="15000" step="1" value="0"> 
-            <label for="price-from">ОТ</label><input type="text" id="price-from">
-            <label for="price-up-to">ДО</label><input type="text" id="price-up-to">
+            <div class="price-range">
+              <label for="price-from">ОТ</label><input type="text" id="price-from">
+              <label for="price-up-to">ДО</label><input type="text" id="price-up-to">
+            </div>           
             <p class="product-filter-text">СЕТКА:</p>
             <ul class="grid-view">
                 <li class="grid-view-item"><input type="radio">Адаптивная</li>
@@ -128,7 +130,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="social-networks">
         <img src="img/vk.svg" alt="vk" class="social-networks-item">
         <img src="img/facebook.svg" alt="facebook" class="social-networks-item">
