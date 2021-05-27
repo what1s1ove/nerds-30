@@ -46,9 +46,6 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
-/* MAIN */
-
 .slide-title {
   font-family: "roboto medium", Arial, sans-serif;
   font-size: 55px;
@@ -72,8 +69,6 @@
   background: #fb565a;
   text-transform: uppercase;
 }
-
-/* SERVICES */
 
 .services-list {
   list-style: none;
@@ -102,8 +97,6 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
-/* ABOUT US */
 
 .about-us-big-description {
   font-family: "roboto medium", Arial, sans-serif;
@@ -160,8 +153,6 @@
   color: #283136;
 }
 
-/* LOCATION */
-
 .contact-us-title {
   font-family: "roboto bold", Arial, sans-serif;
   font-size: 18px;
@@ -196,8 +187,6 @@
   border-radius: 3px;
 }
 
-/* FOOTER */
-
 .footer-title {
   font-family: "roboto bold", Arial, sans-serif;
   font-size: 36px;
@@ -212,7 +201,6 @@
   color: #444444;
 }
 
-/* CATALOG.HTML */
 
 .main-header-title {
   font-family: "roboto medium", Arial, sans-serif;
