@@ -1,166 +1,137 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a><img width="160" height="65" src="./img/nerds-logo.svg" alt="лого"></a>
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <img width="15" height="15" src="./img/cart-icon.svg" alt="корзина">
-        <a href="#">Корзина</a>
-      </nav>
-    </header>
+<html class="page" lang="ru">
 
-    <main>
-      <section>
-        <form action="#">
-          <h3>стоимость</h3>
-          <input type="range" name="range" id="cost-range">
-          <p>
-            <label for="min">ОТ</label>
-            <input type="text" placeholder="0" id="min">
-            <label for="max">ДО</label>
-            <input type="text" placeholder="15 000" id="max">
-          </p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon-apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Document</title>
+</head>
 
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img width="160" height="65" src="img/header-logo.svg" alt="Логотип нёрдс">
+      </a>
+      <ul class="site-navigation-list">
+        <li class="site-navigation-item"><a href="">студия</a></li>
+        <li class="site-navigation-item"><a href="">клиенты</a></li>
+        <li class="site-navigation-item"><a href="">магазин</a></li>
+        <li class="site-navigation-item"><a href="">контакты</a></li>
+      </ul>
+      <a class="cart-link" href="">корзина</a>
+    </nav>
+    <h3 class="main-header-title">Магазин готовых шаблонов</h3>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <form action="#">
         <fieldset>
-          <legend>Сетка:</legend>
-          <ul>
-            <li>
-              <input type="radio" name="radio-set" id="adaptive">
-              <label for="adaptive">Адаптивная</label>
-            </li>
-            <li>
-              <input type="radio" name="radio-set" id="fixed">
-              <label for="fixed">Фиксированная</label>
-            </li>
-            <li>
-              <input type="radio" name="radio-set" id="bus">
-              <label for="bus">Резиновая</label>
-            </li>
-          </ul>
+          <h3 class="filter-title">Соимость:</h3>
+          <input type="range">
+          <label for="ot" class="filter-price-txt">ОТ</label>
+          <input type="number" id="ot" placeholder="0">
+          <label for="do" class="filter-price-txt">ДО</label>
+          <input type="number" id="do" placeholder="15000">
         </fieldset>
 
         <fieldset>
-          <legend>Особенности:</legend>
-          <ul>
-            <li>
-              <input id="slider" type="checkbox">
-              <label for="slider">Слайдер</label>
-            </li>
-            <li>
-              <input id="advantages" type="checkbox">
-              <label for="advantages">Блок Преимуществ</label>
-            </li>
-            <li>
-              <input id="news" type="checkbox">
-              <label for="news">Новости</label>
-            </li>
-            <li>
-              <input id="galery" type="checkbox">
-              <label for="galery">Галерея</label>
-            </li>
-            <li>
-              <input id="basket" type="checkbox">
-              <label for="basket">Корзина</label>
-            </li>
-          </ul>
+          <h3 class="filter-title">Сетка:</h3>
+          <input type="radio" id="adaptiv" name="grid">
+          <label for="adaptiv" class="filter-items">Адаптивная</label>
+          <input type="radio" id="fix" name="grid">
+          <label for="fix" class="filter-items">Фиксированная</label>
+          <input type="radio" id="eraser" name="grid">
+          <label for="eraser" class="filter-items">Резиновая</label>
         </fieldset>
-        <button type="submit">Показать</button>
-        </form>
-      </section>
-      <section>
-        <h3>Сортировать:</h3>
-        <ul>
-          <li>
-            <a href="#">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По названию</a>
-          </li>
-          <li>
-            <img src="./img/Shape.svg" alt="arrow-down" width="11px" height="10px">
-            <img src="./img/Shape.svg" alt="arrow-up" width="11px" height="10px">
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <img src="./img/img-sedona 1.jpg" alt="sedona" width="359px" height="576px">
-          </li>
-          <li>
-            <img src="./img/img-pink 1.jpg" alt="pink" width="359px" height="576px">
-          </li>
-          <li>
-            <img src="./img/img-barbershop 1.jpg" alt="barbershop" width="359px" height="576px">
-          </li>
-          <li>
-            <img src="./img/img-mishka 1.jpg" alt="mishka" width="359px" height="576px">
-          </li>
-          <li>
-            <img src="./img/img-aplus 1.jpg" alt="a+" width="359px" height="576px">
-          </li>
-          <li>
-            <img src="./img/img-kvast 1.jpg" alt="kwast" width="359px" height="576px">
-          </li>
-        </ul>
 
-        <ul>
-          <li>
-            1
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li>
-            <a href="#">Следующая</a>
-          </li>
+        <fieldset>
+          <h3 class="filter-title" class="filter-items">Особенности:</h3>
+          <input type="checkbox" id="slider">
+          <label for="slider" class="filter-items">Слайдер</label>
+          <input type="checkbox" id="block">
+          <label for="block" class="filter-items">Блок преймуществ</label>
+          <input type="checkbox" id="news">
+          <label for="news" class="filter-items">Новости</label>
+          <input type="checkbox" id="gallery">
+          <label for="gallery" class="filter-items">Галерея</label>
+          <input type="checkbox" id="basket">
+          <label for="basket" class="filter-items">Корзина</label>
+        </fieldset>
+
+        <a href="" class="filters-button">Показать</a>
+      </form>
+    </section>
+
+    <section class="sorting">
+        <h3 class="sorting-title">Сортировать:</h3>
+        <ul class="sorting-list">
+          <li class="sorting-item-active">По цене</li>
+          <li class="sorting-item">По типу</li>
+          <li class="sorting-item">По названию</li>
+          <li class="sorting-item"></li>
+          <li class="sorting-item"></li>
         </ul>
-      </section>
-      <section>
-          <address>
-            <h4>NЁRDS DESIGN STUDIO</h4>
-            <p>
-              191186, Санкт-Петербург, <br>
-              ул. Б. Конюшенная, д. 19/8
-            </p>
-            <p>
-              тел. <a href="#">+7 (812) 275-75-75</a>
-            </p>
-            <a href="#">Напишите нам</a>
-          </address>
-          <img src="./img/map 1.jpg" alt="map" width="100%" height="416px">
-          <img src="./img/map-marker 1.png" alt="marker" width="231px" height="190px">
-      </section>
+    </section>
+
+
+    <section>
+      <div>
+        <div>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+        <img src="img/site1.png" alt="Первый шаблон">
+        <div>
+          <h3 class="card-title">sedona</h3>
+          <p class="card-description">Информационный сайт для туристов</p>
+          <a href="" class="card-button">9 900р</a>
+        </div>
+      </div>
+
+      <ul class="pages-list">
+        <li class="pages-item-active"><a href="">1</a></li>
+        <li class="pages-item"><a href="">2</a></li>
+        <li class="pages-item"><a href="">3</a></li>
+        <li class="pages-item"><a href="">Следующая</a></li>
+      </ul>
+    </section>
+    
+    <section class="location">
+    
+      <img src="img/map.png" alt="Карта">
+    
+      <div class="contact-us">
+        <h3 class="contact-us-title">NЁRDS DESIGN STUDIO</h3>
+        <p class="contact-us-location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="tel:+78122757575" class="telephone-number">тел. +7 (812) 275-75-75</a>
+        <a href="" class="contact-us-button">Напишите нам</a>
+      </div>
+    
+      <img width="231" height="190" src="https://via.placeholder.com/231x190" alt="Геометка">
+    </section>
     </main>
-
-    <footer>
-        <ul>
-          <li>
-            <img src="./img/vk-icon.svg" alt="vk" width="26px" height="15px">
-          </li>
-          <li>
-            <img src="./img/fb-icon.svg" alt="fb" width="12px" height="22px">
-          </li>
-          <li>
-            <img src="./img/insta-icon.svg" alt="inst" width="22px" height="22px">
-          </li>
-        </ul>
-          <p>Давайте дружить это выгодно!<br>
-          Скидка 10% для друзей из социальных сетей</p>
+    
+    <footer class="main-footer">
+      <ul class="footer-list">
+        <li class="footer-item"><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="vk"></li>
+        <li class="footer-item"><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="facebook"></li>
+        <li class="footer-item"><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="instagram"></li>
+      </ul>
+    
+      <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
+      <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-  </body>
+
+</body>
+
 </html>
