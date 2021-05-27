@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,6 @@
   <link rel="manifest" href="manifest.webmanifest">
   <title>Document</title>
 </head>
-
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
@@ -30,108 +28,104 @@
     </nav>
     <h3 class="main-header-title">Магазин готовых шаблонов</h3>
   </header>
-
   <main class="container">
-    <section class="filters">
-      <form action="#">
-        <fieldset>
-          <h3 class="filter-title">Соимость:</h3>
-          <input type="range">
-          <label for="ot" class="filter-price-txt">ОТ</label>
-          <input type="number" id="ot" placeholder="0">
-          <label for="do" class="filter-price-txt">ДО</label>
-          <input type="number" id="do" placeholder="15000">
-        </fieldset>
-
-        <fieldset>
-          <h3 class="filter-title">Сетка:</h3>
-          <input type="radio" id="adaptiv" name="grid">
-          <label for="adaptiv" class="filter-items">Адаптивная</label>
-          <input type="radio" id="fix" name="grid">
-          <label for="fix" class="filter-items">Фиксированная</label>
-          <input type="radio" id="eraser" name="grid">
-          <label for="eraser" class="filter-items">Резиновая</label>
-        </fieldset>
-
-        <fieldset>
-          <h3 class="filter-title" class="filter-items">Особенности:</h3>
-          <input type="checkbox" id="slider">
-          <label for="slider" class="filter-items">Слайдер</label>
-          <input type="checkbox" id="block">
-          <label for="block" class="filter-items">Блок преймуществ</label>
-          <input type="checkbox" id="news">
-          <label for="news" class="filter-items">Новости</label>
-          <input type="checkbox" id="gallery">
-          <label for="gallery" class="filter-items">Галерея</label>
-          <input type="checkbox" id="basket">
-          <label for="basket" class="filter-items">Корзина</label>
-        </fieldset>
-
-        <a href="" class="filters-button">Показать</a>
-      </form>
+    <section class="main-content">
+      <section class="filters">
+        <form action="#">
+          <fieldset>
+            <h3 class="filter-title">Соимость:</h3>
+            <input type="range">
+            <label for="ot" class="filter-price-txt">ОТ</label>
+            <input type="number" id="ot" placeholder="0">
+            <label for="do" class="filter-price-txt">ДО</label>
+            <input type="number" id="do" placeholder="15000">
+          </fieldset>
+          <fieldset>
+            <h3 class="filter-title">Сетка:</h3>
+            <input type="radio" id="adaptiv" name="grid">
+            <label for="adaptiv" class="filter-items">Адаптивная</label>
+            <input type="radio" id="fix" name="grid">
+            <label for="fix" class="filter-items">Фиксированная</label>
+            <input type="radio" id="eraser" name="grid">
+            <label for="eraser" class="filter-items">Резиновая</label>
+          </fieldset>
+          <fieldset>
+            <h3 class="filter-title" class="filter-items">Особенности:</h3>
+            <input type="checkbox" id="slider">
+            <label for="slider" class="filter-items">Слайдер</label>
+            <input type="checkbox" id="block">
+            <label for="block" class="filter-items">Блок преймуществ</label>
+            <input type="checkbox" id="news">
+            <label for="news" class="filter-items">Новости</label>
+            <input type="checkbox" id="gallery">
+            <label for="gallery" class="filter-items">Галерея</label>
+            <input type="checkbox" id="basket">
+            <label for="basket" class="filter-items">Корзина</label>
+          </fieldset>
+          <a href="" class="filters-button">Показать</a>
+        </form>
+      </section>
+      <section class="right-content">
+        <section class="sorting">
+            <h3 class="sorting-title">Сортировать:</h3>
+            <ul class="sorting-list">
+              <li class="sorting-item-active">По цене</li>
+              <li class="sorting-item">По типу</li>
+              <li class="sorting-item">По названию</li>
+              <li class="sorting-item"></li>
+              <li class="sorting-item"></li>
+            </ul>
+        </section>
+        <section>
+          <section class="cards">
+            <div>
+              <img src="img/site1.png" alt="Первый шаблон">
+            </div>
+            <div>
+              <img src="img/site2.png" alt="Первый шаблон">
+            </div>
+            <div>
+              <img src="img/site3.png" alt="Первый шаблон">
+            </div>
+            <div>
+              <img src="img/site4.png" alt="Первый шаблон">
+            </div>
+            <div>
+              <img src="img/site5.png" alt="Первый шаблон">
+            </div>
+            <div>
+              <img src="img/site6.png" alt="Первый шаблон">
+            </div>
+          </section>
+          <ul class="pages-list">
+            <li class="pages-item-active"><a href="">1</a></li>
+            <li class="pages-item"><a href="">2</a></li>
+            <li class="pages-item"><a href="">3</a></li>
+            <li class="pages-item"><a href="">Следующая</a></li>
+          </ul>
+        </section>
+      </section>
     </section>
-
-    <section class="sorting">
-        <h3 class="sorting-title">Сортировать:</h3>
-        <ul class="sorting-list">
-          <li class="sorting-item-active">По цене</li>
-          <li class="sorting-item">По типу</li>
-          <li class="sorting-item">По названию</li>
-          <li class="sorting-item"></li>
-          <li class="sorting-item"></li>
-        </ul>
-    </section>
-
-
-    <section>
-      <div>
-        <div>
-          <li></li>
-          <li></li>
-          <li></li>
-        </div>
-        <img src="img/site1.png" alt="Первый шаблон">
-        <div>
-          <h3 class="card-title">sedona</h3>
-          <p class="card-description">Информационный сайт для туристов</p>
-          <a href="" class="card-button">9 900р</a>
-        </div>
-      </div>
-
-      <ul class="pages-list">
-        <li class="pages-item-active"><a href="">1</a></li>
-        <li class="pages-item"><a href="">2</a></li>
-        <li class="pages-item"><a href="">3</a></li>
-        <li class="pages-item"><a href="">Следующая</a></li>
-      </ul>
-    </section>
-    
     <section class="location">
-    
       <img src="img/map.png" alt="Карта">
-    
       <div class="contact-us">
         <h3 class="contact-us-title">NЁRDS DESIGN STUDIO</h3>
         <p class="contact-us-location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <a href="tel:+78122757575" class="telephone-number">тел. +7 (812) 275-75-75</a>
         <a href="" class="contact-us-button">Напишите нам</a>
       </div>
-    
-      <img width="231" height="190" src="https://via.placeholder.com/231x190" alt="Геометка">
     </section>
     </main>
-    
     <footer class="main-footer">
       <ul class="footer-list">
-        <li class="footer-item"><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="vk"></li>
-        <li class="footer-item"><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="facebook"></li>
-        <li class="footer-item"><img width="81" height="81" src="https://via.placeholder.com/81x81" alt="instagram"></li>
+        <li class="footer-item"><img width="26" height="15" src="img/vk-icon.svg" alt="vk"></li>
+        <li class="footer-item"><img width="12" height="22" src="img/fb-icon.svg" alt="facebook"></li>
+        <li class="footer-item"><img width="21" height="21" src="img/insta-icon.svg" alt="instagram"></li>
       </ul>
-    
-      <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
-      <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-text">
+        <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
+        <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
-
 </body>
-
 </html>

@@ -5,7 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "roboto bold";
   src: url("../fonts/robotobold.woff2") format("woff2"),
@@ -13,7 +12,6 @@
   font-weight: bold;
   font-style: normal;
 }
-
 @font-face {
   font-family: "roboto medium";
   src: url("../fonts/robotomedium.woff2") format("woff2"),
@@ -21,13 +19,49 @@
   font-weight: medium;
   font-style: normal;
 }
-
-/* HEADER */
-
+:root {
+  --red-peace: #fb565a;
+  --red-hover: #e74246;
+  --red-click: #d7373b;
+  --green-peace: #00ca74;
+  --green-hover: #00bc6c;
+  --green-click: #00aa62;
+  --yellow-peace: #efc849;
+  --yellow-hover: #eab534;
+  --yellow-click: #e5a722;
+}
+.page {
+  height: 100%;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+.main-header {
+  margin-top: 49px;
+}
+.main-navigation {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.main-header-logo {
+  margin-right: 0px;
+}
+.site-navigation-list {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
 .site-navigation-item {
   list-style: none;
+  margin-right: 45px;
 }
-
 .site-navigation-item a {
   list-style: none;
   font-family: "roboto medium", Arial, sans-serif;
@@ -37,7 +71,6 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
 .cart-link {
   font-family: "roboto medium", Arial, sans-serif;
   color: #000000;
@@ -46,34 +79,41 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+.slide-content {
+  display: flex;
+  align-items: center;
+}
 .slide-title {
   font-family: "roboto medium", Arial, sans-serif;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
 }
-
 .slide-description {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
 }
-
 .slider-button {
   font-family: "roboto", Arial, sans-serif;
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
-  background: #fb565a;
+  background: var(--red-peace);
   text-transform: uppercase;
 }
-
 .services-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 347px;
+  column-gap: 100px;
 }
-
+.services-item {
+  border: 2px greenyellow solid;
+}
 .services-item-title {
   font-family: "roboto bold", Arial, sans-serif;
   font-size: 24px;
@@ -81,14 +121,12 @@
   color: #000000;
   text-transform: uppercase;
 }
-
 .services-item-description {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
 }
-
 .services-item-button {
   font-family: "roboto medium", Arial, sans-serif;
   font-size: 16px;
@@ -97,21 +135,22 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
+.about-and-stat {
+  display: grid;
+  grid-template-columns: 651px 360px;
+}
 .about-us-big-description {
   font-family: "roboto medium", Arial, sans-serif;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
 }
-
 .about-us-small-description {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
 }
-
 .about-us-list-title {
   font-family: "roboto bold", Arial, sans-serif;
   text-transform: uppercase;
@@ -119,14 +158,12 @@
   line-height: 24px;
   color: #283136;
 }
-
 .about-us-item {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
 }
-
 .our-statistics-title-list {
   font-family: "roboto bold", Arial, sans-serif;
   text-transform: uppercase;
@@ -134,25 +171,38 @@
   line-height: 24px;
   color: #000000;
 }
-
+.flex-statistics-list {
+  display: flex;
+  align-items: center;
+}
 .our-statistics-list {
   list-style: none;
+  padding: 0;
 }
-
 .our-statistics-number {
   font-family: "roboto bold", Arial, sans-serif;
   font-size: 45px;
   line-height: 64px;
   color: #000000;
 }
-
 .our-statistics-num-descriptrion {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #283136;
 }
+.clients-list {
+  list-style: none;
+  display: grid;
 
+  grid-template-columns: 199px 209px 185px 173px;
+  column-gap: 95px;
+}
+
+.clients-items {
+  display: flex;
+  align-items: center;
+}
 .contact-us-title {
   font-family: "roboto bold", Arial, sans-serif;
   font-size: 18px;
@@ -160,14 +210,12 @@
   text-transform: uppercase;
   color: #000000;
 }
-
 .contact-us-location {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
-
 .telephone-number {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
@@ -175,7 +223,6 @@
   color: #666666;
   text-decoration: none;
 }
-
 .contact-us-button {
   font-family: "roboto medium", Arial, sans-serif;
   text-transform: uppercase;
@@ -183,32 +230,46 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
-  background: #fb565a;
+  background: var(--red-peace);
   border-radius: 3px;
 }
-
+.main-footer {
+  display: flex;
+  align-items: center;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
 .footer-title {
   font-family: "roboto bold", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin: 0;
 }
-
 .footer-description {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
 }
-
-
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #e1e1e1, #e1e1e1), #ffffff;
+  width: 81px;
+  height: 81px;
+}
 .main-header-title {
   font-family: "roboto medium", Arial, sans-serif;
   font-size: 55px;
   line-height: 55px;
   color: #000000;
 }
-
 .filter-title {
   font-family: "roboto bold", Arial, sans-serif;
   text-transform: uppercase;
@@ -216,7 +277,6 @@
   line-height: 30px;
   color: #000000;
 }
-
 .filter-price-txt {
   font-family: "roboto", Arial, sans-serif;
   text-transform: uppercase;
@@ -224,14 +284,12 @@
   line-height: 22px;
   color: #283136;
 }
-
 .filter-items {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #283136;
 }
-
 .filters-button {
   font-family: "roboto medium", Arial, sans-serif;
   font-size: 16px;
@@ -242,7 +300,6 @@
   border-radius: 3px;
   text-decoration: none;
 }
-
 .sorting-title {
   font-family: "roboto bold", Arial, sans-serif;
   text-transform: uppercase;
@@ -250,11 +307,9 @@
   line-height: 30px;
   color: #000000;
 }
-
 .sorting-list {
   list-style: none;
 }
-
 .sorting-item-active {
   font-family: "roboto", Arial, sans-serif;
   text-transform: uppercase;
@@ -262,7 +317,6 @@
   line-height: 18px;
   color: #000000;
 }
-
 .sorting-item {
   font-family: "roboto", Arial, sans-serif;
   text-transform: uppercase;
@@ -271,7 +325,6 @@
   color: #000000;
   opacity: 0.3;
 }
-
 .card-title {
   font-family: "roboto bold", Arial, sans-serif;
   text-transform: uppercase;
@@ -279,14 +332,12 @@
   line-height: 30px;
   color: #000000;
 }
-
 .card-description {
   font-family: "roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
-
 .card-button {
   font-family: "roboto medium", Arial, sans-serif;
   text-transform: uppercase;
@@ -294,14 +345,12 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
-  background: #fb565a;
+  background: var(--red-peace);
   border-radius: 3px;
 }
-
 .pages-list {
   list-style: none;
 }
-
 .pages-item-active a {
   font-family: "roboto medium", Arial, sans-serif;
   color: #000000;
@@ -313,7 +362,6 @@
   box-sizing: border-box;
   border-radius: 3px;
 }
-
 .pages-item a {
   font-family: "roboto medium", Arial, sans-serif;
   color: #000000;
@@ -324,4 +372,22 @@
   border: 3px solid #dbdbdb;
   box-sizing: border-box;
   border-radius: 3px;
+}
+.main-content {
+  display: flex;
+}
+.sorting {
+  display: flex;
+}
+.sorting-list {
+  display: flex;
+}
+.pages-list {
+  display: flex;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 358px 358px;
+  row-gap: 31px;
+  column-gap: 42px;
 }
