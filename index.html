@@ -11,7 +11,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon-apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <title>module3-task1</title>
+  <title>Nerds</title>
 </head>
 
 <body class="page-body">
@@ -24,7 +24,7 @@
       <ul class="site-navigation-list">
         <li class="site-navigation-item"><a href="">студия</a></li>
         <li class="site-navigation-item"><a href="">клиенты</a></li>
-        <li class="site-navigation-item"><a href="">магазин</a></li>
+        <li class="site-navigation-item"><a href="catalog.html">магазин</a></li>
         <li class="site-navigation-item"><a href="">контакты</a></li>
       </ul>
       <a class="cart-link" href="">корзина</a>
@@ -56,22 +56,24 @@
           <img width="300" height="146" src="img/illustration-red.jpg" alt="Ноутбук с Веб-сайтом">
           <h3 class="services-item-title">Веб-сайты</h3>
           <p class="services-item-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="services-item-button" href="" style="background: #fb565a;">Заказать</a>
+          <a class="services-item-button services-item-button--red" href="" >Заказать</a>
         </li>
         <li class="services-item">
           <img width="300" height="146" src="img/illustration-green.jpg" alt="Телефон с приложением">
           <h3 class="services-item-title">Приложения</h3>
           <p class="services-item-description">Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="services-item-button" href="" style="background: var(--green-peace)">Заказать</a>
+          <a class="services-item-button services-item-button--green" href="" >Заказать</a>
         </li>
         <li class="services-item">
           <img width="300" height="146" src="img/illustration-yellow.jpg" alt="Доска с презентацией">
           <h3 class="services-item-title">Презентации</h3>
           <p class="services-item-description">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="services-item-button" href="" style="background: var(--yellow-peace);">Заказать</a>
+          <a class="services-item-button services-item-button--yellow" href="">Заказать</a>
         </li>
       </ul>
     </section>
+
+    <div class="big-line"></div>
 
 
   <section class="about-and-stat">
@@ -88,7 +90,7 @@
     </section>
 
       <section class="our-statistics">
-          <img width="360" height="208" src="img/logo-happy.png" alt="Праздничный логотип нердс">
+          <img width="360" height="208" src="img/logo-happy.png" class="happy-logo" alt="Праздничный логотип нердс">
           <span class="our-statistics-title-list">с 2004 года Любим точность во всем:</span>
           <div class="flex-statistics-list">
             <ul class="our-statistics-list">
@@ -107,24 +109,30 @@
       </section>
     </section>
 
+    <div class="big-line"></div>
+
     <section class="clients">
       <ul class="clients-list">
-        <li class="clients-items"><img width="199" height="67" src="img/html-academy-logo.svg" alt="htmlacademy"></li>
-        <li class="clients-items"><img width="209" height="90" src="img/borodinski-logo.jpg" alt="borodinski"></li>
-        <li class="clients-items"><img width="185" height="52" src="img/pink-logo.png" alt="pink"></li>
-        <li class="clients-items"><img width="173" height="84" src="img/mishka-logo.png" alt="mishka"></li>
+        <li class="clients-items client-item-html"><img width="199" height="67" src="img/html-academy-logo.svg" alt="htmlacademy"></li>
+        <li class="clients-items client-item-borodinski"><img width="209" height="90" src="img/borodinski-logo.jpg" alt="borodinski"></li>
+        <li class="clients-items client-item-pink"><img width="185" height="52" src="img/pink-logo.png" alt="pink"></li>
+        <li class="clients-items client-item-mishka"><img width="173" height="84" src="img/mishka-logo.png" alt="mishka"></li>
       </ul>
     </section>
 
+    <div class="big-line"></div>
+
     <section class="location">
 
-        <img src="img/map.png" alt="Карта">
+        <img src="img/map.png" class="map-img" width="1440" height="416" alt="Карта">
 
       <div class="contact-us">
-        <h3 class="contact-us-title">NЁRDS DESIGN STUDIO</h3>
-        <p class="contact-us-location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78122757575" class="telephone-number">тел. +7 (812) 275-75-75</a>
-        <a href="" class="contact-us-button">Напишите нам</a>
+        <ul class="contact-us-list">
+          <li class="contact-us-item"><h3 class="contact-us-title">NЁRDS DESIGN STUDIO</h3></li>
+          <li class="contact-us-item"><p class="contact-us-location">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p></li>
+          <li class="contact-us-item"><a href="tel:+78122757575" class="telephone-number">тел. +7 (812) 275-75-75</a></li>
+          <li class="contact-us-item"><a href="" class="contact-us-button">Напишите нам</a></li>
+        </ul>
       </div>
 
     </section>
