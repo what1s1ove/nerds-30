@@ -20,7 +20,7 @@
           </ul>
           <div class="cart">
             <img src="img/cart-icon.svg" alt="cart" class="cart-icon">
-            <a href="#" class="cart-text">Корзина</a>
+            <a href="#" class="cart-text">КОРЗИНА</a>
           </div>
         </div>
         <div class="main-heading">Магазин готовых шаблонов</div>
@@ -29,112 +29,128 @@
       <section class="price-list">
         <div class="product-filter">
             <p class="product-filter-text">СТОИМОСТЬ:</p>
-            <input class="price-band" type="range" min="0" max="15000" step="1" value="0"> 
-            <div class="price-range">
-              <label for="price-from">ОТ</label><input type="text" id="price-from">
-              <label for="price-up-to">ДО</label><input type="text" id="price-up-to">
+            <div class="price-band-box">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 30%;margin-left: 20%"></div>
+                </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+              </div>
             </div>           
-            <p class="product-filter-text">СЕТКА:</p>
-            <ul class="grid-view">
-                <li class="grid-view-item"><input type="radio">Адаптивная</li>
-                <li class="grid-view-item"><input type="radio">Фиксированная</li>
-                <li class="grid-view-item"><input type="radio">Резиновая</li>
-            </ul>
-            <p class="product-filter-text">ОСОБЕННОСТИ:</p>
-            <ul class="product-features">
-                <li class="product-features-item"><input type="checkbox">Слайдер</li>
-                <li class="product-features-item"><input type="checkbox">Блок преимуществ</li>
-                <li class="product-features-item"><input type="checkbox">Новости</li>
-                <li class="product-features-item"><input type="checkbox">Галерея</li>
-                <li class="product-features-item"><input type="checkbox">Корзина</li>
-            </ul>
+            <div class="price-range">
+              <div><label for="price-from">ОТ</label><input class="price-from-input" type="text" id="price-from" value="0"></div>
+              <div><label for="price-up-to">ДО</label><input class="price-from-input" type="text" id="price-up-to" value="15000"></div>
+            </div>           
+            <div class="grid-view-box">
+              <p class="product-filter-text">СЕТКА:</p>
+              <ul class="grid-view">
+                  <li class="grid-view-item"><input type="radio"><p>Адаптивная</p></li>
+                  <li class="grid-view-item"><input type="radio"><p>Фиксированная</p></li>
+                  <li class="grid-view-item"><input type="radio"><p>Резиновая</p></li>
+              </ul>
+            </div>
+            <div class="product-features-box">
+              <p class="product-filter-text">ОСОБЕННОСТИ:</p>
+              <ul class="product-features">
+                  <li class="product-features-item"><input type="checkbox"><p>Слайдер</p></li>
+                  <li class="product-features-item"><input type="checkbox"><p>Блок преимуществ</p></li>
+                  <li class="product-features-item"><input type="checkbox"><p>Новости</p></li>
+                  <li class="product-features-item"><input type="checkbox"><p>Галерея</p></li>
+                  <li class="product-features-item"><input type="checkbox"><p>Корзина</p></li>
+              </ul>
+            </div>
             <button class="product-filter-but">ПОКАЗАТЬ</button>
         </div>
         <div class="product">
             <div class="product-sorting">
-                <p class="product-sorting-heading">СОРТИРОВАТЬ:</p>
-                <ul class="sorting-option">
-                    <li class="sorting-option-item sorting-option-active">ПО ЦЕНЕ</li>
-                    <li class="sorting-option-item">ПО ТИПУ</li>
-                    <li class="sorting-option-item">ПО НАЗВАНИЮ</li>
-                    <li></li>
-                    <li></li>
-                </ul>
+              <p class="product-sorting-heading">СОРТИРОВАТЬ:</p>
+              <ul class="sorting-option">
+                <li class="sorting-option-item sorting-option-active">ПО ЦЕНЕ</li>
+                <li class="sorting-option-item">ПО ТИПУ</li>
+                <li class="sorting-option-item">ПО НАЗВАНИЮ</li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
-            <div class="product-items">
-                <div class="product-item">
-                    <div class="circle">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <img src="img/img-sedona 1.png" width="360" height="578" alt="" class="product-item-img">
-                </div>  
-                <div class="product-item">
-                  <div class="circle">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                  </div>
-                  <img src="img/img-pink 1.png" width="360" height="578" alt="" class="product-item-img">
-                </div> 
-                <div class="product-item">
-                  <div class="circle">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                  </div>
-                  <img src="img/img-barbershop 1.png" width="360" height="578" alt="" class="product-item-img">
-                </div> 
-                <div class="product-item">
-                  <div class="circle">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                  </div>
-                  <img src="img/img-mishka 1.png" width="360" height="578" alt="" class="product-item-img">
-                </div>    
-                <div class="product-item">
-                  <div class="circle">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                  </div>
-                  <img src="img/img-aplus 1.png" width="360" height="578" alt="" class="product-item-img">
-                </div> 
-                <div class="product-item">
-                  <div class="circle">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                  </div>
-                  <img src="img/img-kvast 1.png" width="360" height="578" alt="" class="product-item-img">
-                </div>      
+            <div class="product-list">
+              <div class="product-item">
+                <div class="circle">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <img src="img/img-sedona 1.png" width="360" height="580" alt="" class="product-item-img">
+                <div class="product-item-info">
+                    <p class="product-item-info-heading">SEDONA</p>
+                    <p class="product-item-info-subtitle">Информационный сайт для туристов</p>
+                    <button class="product-item-info-price">9 900 ₽</button>
+                </div>
+              </div>  
+              <div class="product-item">
+                <div class="circle">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <img src="img/img-sedona 1.png" width="360" height="580" alt="" class="product-item-img">
+                <div class="product-item-info">
+                    <p class="product-item-info-heading">SEDONA</p>
+                    <p class="product-item-info-subtitle">Информационный сайт для туристов</p>
+                    <button class="product-item-info-price">9 900 ₽</button>
+                </div>
+              </div> 
+              <div class="product-item">
+                <div class="circle">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <img src="img/img-sedona 1.png" width="360" height="580" alt="" class="product-item-img">
+                <div class="product-item-info">
+                    <p class="product-item-info-heading">SEDONA</p>
+                    <p class="product-item-info-subtitle">Информационный сайт для туристов</p>
+                    <button class="product-item-info-price">9 900 ₽</button>
+                </div>
+              </div> 
+              <div class="product-item">
+                <div class="circle">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <img src="img/img-sedona 1.png" width="360" height="580" alt="" class="product-item-img">
+                <div class="product-item-info">
+                    <p class="product-item-info-heading">SEDONA</p>
+                    <p class="product-item-info-subtitle">Информационный сайт для туристов</p>
+                    <button class="product-item-info-price">9 900 ₽</button>
+                </div>
+              </div>          
             </div>
             <ul class="product-navigation">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>Следующая</li>
+                <li class="product-navigation-item product-navigation-item-active">1</li>
+                <li class="product-navigation-item">2</li>
+                <li class="product-navigation-item">3</li>
+                <li class="product-navigation-next">СЛЕДУЮЩАЯ</li>
             </ul>
         </div>
     </section>
     <section class="contacts">
-      <img src="img/map 1.png" width="1440" height="416" alt="map">
-      <img src="img/map-marker 1.png" width="230" height="190" alt="map-marker">
-        <div class="location">
-          <p class="location-heading">NЁRDS DESIGN STUDIO</p>
-          <p class="location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
-          <p class="phone-numbers">тел. +7 (812) 275-75-75</p> 
-          <button class="location-but">Напишите нам</button>
-        </div>
-      </section>
+      <img src="img/map 1.png" width="1440" height="416" alt="map" class="maps">
+      <img src="img/map-marker 1.png" width="230" height="190" alt="map-marker" class="map-marker">
+      <div class="information">
+        <p class="location-heading">NЁRDS DESIGN STUDIO</p>
+        <p class="location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
+        <p class="phone-numbers">тел. +7 (812) 275-75-75</p> 
+        <button class="location-but">НАПИШИТЕ НАМ</button>
+      </div>
+    </section>
     </main>
     <footer class="footer">
       <div class="social-networks">
-        <img src="img/vk.svg" alt="vk" class="social-networks-item">
-        <img src="img/facebook.svg" alt="facebook" class="social-networks-item">
-        <img src="img/instagram.svg" alt="instagram" class="social-networks-item">
+        <a href="#" class="social-networks-item"><img src="img/vk.svg" alt="vk"></a>
+        <a href="#" class="social-networks-item"><img src="img/facebook.svg" alt="facebook"></a>
+        <a href="#" class="social-networks-item"><img src="img/instagram.svg" alt="instagram"></a>
       </div>
       <div class="footer-text">
         <p class="footer-heading">Давайте дружить, это выгодно!</p>
