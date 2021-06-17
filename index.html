@@ -135,23 +135,37 @@
         </ul>
       </div>
 
-      <div class="modal">
-        <div class="modal-window">
-          <div class="modal-content">
-            <div class="modal-title-close">
-              <h3 class="modal-title">Напишите нам</h3>
-              <img src="img/close-modal.svg" width="21" height="21">
-            </div>
-            <form action="" class="modal-form">
-              <div class="user-info">
-                <div class="user-name">
-                  <label for="user-name">Ваше имя</label>
-                  <input type="text" id="user-name" placeholder="Имя Фамилия">
-                </div>
-              </div>
-            </form>
+
+      <div class="modal-form container hide">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="modal-top">
+            <h3 class="modal-title">Напишите нам</h3>
+            <span class="closed-modal"></span>
           </div>
-        </div>
+          <div class="modal_input_top">
+            <div class="appointment_item">
+              <p>
+                <label for="name" class="label-form">Ваше имя:</label>
+              </p>
+              <input class="form-input appointment_name" id="name" type="text" name="name-surename" placeholder="Имя Фамилия">
+            </div>
+        
+            <div class="appointment_item appointment_item_two">
+              <p>
+                <label for="email" class="label-form">Ваш email:</label>
+              </p>
+              <input class="form-input appointment_email" id="email" type="email" name="email" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="appointment_item modal_input_area">
+            <p></p>
+              <label for="text" class="label-form">Текст письма:</label>
+            </p>
+            <textarea class="form-input modal_textarea" rows="4" cols="94" name="textarea" id="text"
+              placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="form-btn btn-submit" type="submit">отправить</button>
+        </form>
       </div>
 
     </section>
