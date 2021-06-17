@@ -1,12 +1,188 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon-apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Nerds</title>
+</head>
 
-  </body>
+<body class="page-body">
+
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img width="160" height="65" src="img/header-logo.svg" alt="Логотип нёрдс">
+      </a>
+      <ul class="site-navigation-list">
+        <li class="site-navigation-item"><a href="">студия</a></li>
+        <li class="site-navigation-item"><a href="">клиенты</a></li>
+        <li class="site-navigation-item"><a href="catalog.html">магазин</a></li>
+        <li class="site-navigation-item"><a href="">контакты</a></li>
+      </ul>
+      <a class="cart-link" href="">корзина</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="slider">
+      <div class="slide-content">
+        <div class="slide-left-content">
+          <h1 class="slide-title">Долго, дорого, скрупулезно.</h1>
+          <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="" class="slider-button">УЗНАТЬ БОЛЬШЕ</a>
+        </div>
+        <!-- /.slide-left-content -->
+        <div class="slide-right-content">
+          <img width="760" height="431" src="img/slide1.png" alt="Картинка в слайде">
+        </div>
+        <!-- /.slide-right-content -->
+      </div>
+      <!-- /.slide-content -->
+    </div>
+    <!-- /.slider -->
+
+    <section class="services">
+      <ul class="services-list">
+        <li class="services-item">
+          <img width="300" height="146" src="img/illustration-red.jpg" alt="Ноутбук с Веб-сайтом">
+          <h3 class="services-item-title">Веб-сайты</h3>
+          <p class="services-item-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="services-item-button services-item-button--red" href="" >Заказать</a>
+        </li>
+        <li class="services-item">
+          <img width="300" height="146" src="img/illustration-green.jpg" alt="Телефон с приложением">
+          <h3 class="services-item-title">Приложения</h3>
+          <p class="services-item-description">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="services-item-button services-item-button--green" href="" >Заказать</a>
+        </li>
+        <li class="services-item">
+          <img width="300" height="146" src="img/illustration-yellow.jpg" alt="Доска с презентацией">
+          <h3 class="services-item-title">Презентации</h3>
+          <p class="services-item-description">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="services-item-button services-item-button--yellow" href="">Заказать</a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="big-line"></div>
+
+
+  <section class="about-and-stat">
+    <section class="about-us">
+      <p class="about-us-big-description">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+      <p class="about-us-small-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
+        рук, как роботы.</p>
+      <h3 class="about-us-list-title">Выполняем заказы на разработку:</h3>
+      <ul class="about-us-list">
+        <li class="about-us-item">Веб-сайтов любой сложности</li>
+        <li class="about-us-item">Мобильных приложений для iOS и Android</li>
+        <li class="about-us-item">Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </section>
+
+      <section class="our-statistics">
+          <img width="360" height="208" src="img/logo-happy.png" class="happy-logo" alt="Праздничный логотип нердс">
+          <span class="our-statistics-title-list">с 2004 года Любим точность во всем:</span>
+          <div class="flex-statistics-list">
+            <ul class="our-statistics-list">
+              <li class="our-statistics-number">146<sup>%</sup></li>
+              <li class="our-statistics-num-descriptrion">Уровень самоотдачи</li>
+            </ul>
+            <ul class="our-statistics-list">
+              <li class="our-statistics-number">100<sup>%</sup></li>
+              <li class="our-statistics-num-descriptrion">Соблюдение сроков</li>
+            </ul>
+            <ul class="our-statistics-list">
+              <li class="our-statistics-number">50<sup>%</sup></li>
+              <li class="our-statistics-num-descriptrion">Минимальная предоплата</li>
+            </ul>
+          </div>
+      </section>
+    </section>
+
+    <div class="big-line"></div>
+
+    <section class="clients">
+      <ul class="clients-list">
+        <li class="clients-items client-item-html"><img width="199" height="67" src="img/html-academy-logo.svg" alt="htmlacademy"></li>
+        <li class="clients-items client-item-borodinski"><img width="209" height="90" src="img/borodinski-logo.jpg" alt="borodinski"></li>
+        <li class="clients-items client-item-pink"><img width="185" height="52" src="img/pink-logo.png" alt="pink"></li>
+        <li class="clients-items client-item-mishka"><img width="173" height="84" src="img/mishka-logo.png" alt="mishka"></li>
+      </ul>
+    </section>
+
+    <div class="big-line"></div>
+
+    <section class="location">
+
+        <img src="img/map.png" class="map-img" width="1440" height="416" alt="Карта">
+
+      <div class="contact-us">
+        <ul class="contact-us-list">
+          <li class="contact-us-item"><h3 class="contact-us-title">NЁRDS DESIGN STUDIO</h3></li>
+          <li class="contact-us-item"><p class="contact-us-location">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p></li>
+          <li class="contact-us-item"><a href="tel:+78122757575" class="telephone-number">тел. +7 (812) 275-75-75</a></li>
+          <li class="contact-us-item"><a href="" class="contact-us-button">Напишите нам</a></li>
+        </ul>
+      </div>
+
+
+      <div class="modal-form container hide">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="modal-top">
+            <h3 class="modal-title">Напишите нам</h3>
+            <span class="closed-modal"></span>
+          </div>
+          <div class="modal_input_top">
+            <div class="appointment_item">
+              <p>
+                <label for="name" class="label-form">Ваше имя:</label>
+              </p>
+              <input class="form-input appointment_name" id="name" type="text" name="name-surename" placeholder="Имя Фамилия">
+            </div>
+        
+            <div class="appointment_item appointment_item_two">
+              <p>
+                <label for="email" class="label-form">Ваш email:</label>
+              </p>
+              <input class="form-input appointment_email" id="email" type="email" name="email" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="appointment_item modal_input_area">
+            <p></p>
+              <label for="text" class="label-form">Текст письма:</label>
+            </p>
+            <textarea class="form-input modal_textarea" rows="4" cols="94" name="textarea" id="text"
+              placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="form-btn btn-submit" type="submit">отправить</button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <ul class="footer-list">
+      <li class="footer-item"><img width="26" height="15" src="img/vk-icon.svg" alt="vk"></li>
+      <li class="footer-item"><img width="12" height="22" src="img/fb-icon.svg" alt="facebook"></li>
+      <li class="footer-item"><img width="21" height="21" src="img/insta-icon.svg" alt="instagram"></li>
+    </ul>
+    <div class="footer-text">
+      <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
+      <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
